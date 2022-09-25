@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Brigade 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="p-4">
+
+    <center>
+        <p style="font-size: 80px">
+            🛫
+        </p>
+        <h1>Code brigade</h1>
+    </center>
+
+    <ul>
+        <li>
+            <a href="index.html">Evaluación 2019</a>
+        </li>
+        <li>
+            <a href="apuntes.html">Apuntes</a>
+        </li>
+        <li>
+            <a href="#">Ruta de implementación</a>
+        </li>
+    </ul>
+
+    <center>
+        <h2>
+            Apuntes
+        </h2>
+
+        📚: Documentación o guía oficial | 📙: Tutorial | 🛠️: Troubleshooting | 🐧: Comando
+    </center>
+
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntesB1">
+        <center>
+            <h5>
+                Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento
+            </h5>
+        </center>
+
+        <h6>Back-end (producción):</h6>
+        Nginx:
+        <ul>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04">📙 - Instalar Nginx</a>
+            </li>
+            <li>
+                <a href="https://docs.nginx.com/nginx/admin-guide/web-server/web-server/">📚 - Nginx: Detallar archivo</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04 ">📙 - Certificado de seguridad de Nginx para HTTPS</a>
+            </li>
+        </ul>
+
+        Base de datos:
+        <ul>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04">📙 - Instalar MySql y crear usuario con permisos para BDD específica (ver últimos pasos)</a>
+            </li>
+        </ul>
+
+        Node:
+        <ul>
+            <li>
+                <a href="https://phoenixnap.com/kb/update-node-js-version ">📙 - Actualizar Node</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04">📙 - Node como app de producción (Ubuntu 18.04)</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-22-04">📙 - Node como app de producción (Ubuntu 22.04)</a>
+            </li>
+        </ul>
+
+        <hr>
+        <h6>Front-end (producción):</h6>
+
+        Crear un sitio estático:
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-how-to?tabs=azure-portal">📚 - Crear un sitio estático en Storage Account</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website">📚 - Más información</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/answers/questions/696299/static-website-not-working.html">🛠️ - Troubleshooting: Cambiar Storage Account a público</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/static-web-apps/overview ">📚 - En App Service (otra manera de hacerlo)</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
+    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntesB12">
+        <center>
+            <h5>
+                CDN
+            </h5>
+        </center>
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/static-website-content-delivery-network">📚 - En sitio estático usando Storage Account</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/cdn/cdn-purge-endpoint ">🛠️ - Purgar CDN</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
+    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntesO5">
+        <center>
+            <h5>
+                Infraestructura como Código
+            </h5>
+        </center>
+        <h6>Terraform:</h6>
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/developer/terraform/get-started-windows-powershell?tabs=bash">📚 - Terraform / Powershell</a>
+            </li>
+            <li>
+                <a href="https://www.terraform.io/language/modules">📚 - Módulos</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
+    <div class="how2div mt-4 mb-4 p-3 color4" id="apuntesO7">
+        <center>
+            <h5>
+                Controles de seguridad (CloudTrail, GuardDuty, WAF, Config, KMS)
+            </h5>
+        </center>
+        <h6>Azure KeyVault:</h6>
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-javascript-virtual-machine?tabs=azure-cli">📚 - KeyVault</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA -->
+
+    <div class="how2div mt-4 mb-4 p-3 color1">
+        <center>
+            <h5>
+                Además...
+            </h5>
+        </center>
+        <h6>Links útiles:</h6>
+        <ul>
+            <li>
+                <a href="https://docs.microsoft.com/en-us/azure/virtual-machines/sizes ">📚 - Guía de tamaños de máquinas virtuales</a>
+            </li>
+            <li>
+                <a href="https://azurespeedtest.azurewebsites.net/ ">📚 - Test de velocidad a servidores de Azure</a>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h6>¡Notas importantes!</h6>
+        <ul>
+            <li>
+                Permitir inbound security rule para HTTP, HTTPS y SSH
+            </li>
+            <li>
+                Disable UFW
+            </li>
+        </ul>
+
+        <hr>
+
+        <h6>Otros problemas</h6>
+
+        No permite ingresar por SSH:
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/guest-os-firewall-blocking-inbound-traffic?WT.mc_id=Portal-Microsoft_Azure_Support ">🛠️ - El firewall (UFW) puede estar bloqueando entradas</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/troubleshoot-ssh-connection#reset-the-ssh-configuration">🛠️ - Resetear configuración de SSH</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/64127284/unable-to-ssh-into-azure-vm-connection-timed-out ">🛠️ - Elevar prioridad de regla inbound</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=hajL20Oe-G0 ">🛠️ - Entrar por serial console</a>
+            </li>
+        </ul>
+
+        Red:
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/network-watcher/diagnose-vm-network-traffic-filtering-problem ">🛠️ - Diagnóstico de red</a>
+            </li>
+        </ul>
+
+        Verificar problemas en el servidor:
+        <ul>
+            <li>🐧 - sudo systemctl restart nginx</li>
+            <li>🐧 - sudo nginx -t</li>
+            <li>🐧 - pm2 info server</li>
+        </ul>
+
+        <hr>
+
+        <h6>Procedimientos</h6>
+
+        Al actualizar código de la VM:
+        <ul>
+            <li>🐧 - sudo systemctl restart nginx</li>
+            <li>🐧 - pm2 info server</li>
+            <li>🐧 - pm2 restart server</li>
+            <li>Instalar módulos de node</li>
+            <li>Actualizar username y password en db.js</li>
+        </ul>
+
+        <hr>
+
+        <h6>Quizás importante...</h6>
+
+        <ul>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/tutorial-secure-web-server ">Tutorial secure web server</a>
+            </li>
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/key-vault/general/tutorial-javascript-virtual-machine?tabs=azure-cli ">JS Virtual machine</a>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
