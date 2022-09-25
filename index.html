@@ -5,8 +5,369 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Brigade 2022</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
-<body>
-    Hola
+<body class="p-4">
+
+    <center>
+        <img src="" alt="logo">
+        <h1>Code brigade</h1>
+    </center>
+
+    <ul>
+        <li>
+            <a href="#">2 do list</a>
+        </li>
+        <li>
+            <a href="#">Plan</a>
+        </li>
+    </ul>
+
+    <table class="table table-bordered text-center" style="border-radius: 5px">
+        <thead class="thead-dark">
+            <tr>
+                <th colspan="6" >
+                    Base
+                </th>
+            </tr>
+            <tr >
+                <th></th>
+                <th>Ítem</th>
+                <th>Equivalente en Azure</th>
+                <th>Dificultad</th>
+                <th>Puntaje</th>
+                <th>Equipo que obtuvo los puntos (2019)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" id="checkbox1" name="" value="" class="m-3">
+                </td>
+                <td>Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento</td>
+                <td></td>
+                <td></td>
+                <td>150</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Múltiples zona de disponibilidad para el servidor web</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Múltiples zona de disponibilidad para la aplicación web </td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Múltiples zona de disponibilidad para los datos. Puede ser RDS o se puede crear otra instancia EC2.</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Subredes públicas y privadas</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Balanceo de carga</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Grupo de autoescalamiento</td>
+                <td>Virtual Machine Scale Sets</td>
+                <td></td>
+                <td>150</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>S3 - Respaldo u almacenamiento de objetos</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Grupos de seguridad</td>
+                <td></td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Monitoreo de la aplicación a través de CloudWatch para tomar acciones</td>
+                <td></td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>IAM - Usuarios y roles definidos</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>CDN</td>
+                <td></td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>NAT Gateway - Parchar y actualizar el sistema operativo</td>
+                <td></td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Gestión remota - Host bastion</td>
+                <td>Azure Bastion</td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Gestión remota - Cloud9</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Gestión remota - System Manager</td>
+                <td></td>
+                <td></td>
+                <td>150</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Cualquier característica adicional</td>
+                <td></td>
+                <td></td>
+                <td>50</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <thead class="thead-light">
+            <tr>
+                <th colspan="6">
+                    Criterios opcionales
+                </th>
+            </tr>
+            <tr >
+                <th></th>
+                <th>Ítem</th>
+                <th>Equivalente en Azure</th>
+                <th>Dificultad</th>
+                <th>Puntaje</th>
+                <th>Equipo que obtuvo los puntos (2019)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Automatizar cambios en el App</td>
+                <td></td>
+                <td></td>
+                <td>125</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Replicación multiregión</td>
+                <td></td>
+                <td></td>
+                <td>125</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Automatizar el parchado, el almacenamiento, gestión de los recursos</td>
+                <td></td>
+                <td></td>
+                <td>100</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Infraestructura como Código </td>
+                <td></td>
+                <td></td>
+                <td>150</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>EC2 fleet, instancias tipo Spot </td>
+                <td></td>
+                <td></td>
+                <td>125</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>Controles de seguridad (CloudTrail, GuardDuty, WAF, Config, KMS)</td>
+                <td>KeyVault</td>
+                <td></td>
+                <td>175</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <center>
+        <h2>
+            Apuntes
+        </h2>
+    </center>
+
+    <div class="how2div mt-2 mb-2 p-3">
+        <h4>
+            Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento
+        </h4>
+        <h6>En local:</h6>
+        Notas para poner a andar el app en local.
+        <hr>
+
+        <h6>En el servidor:</h6>
+        Nginx:
+        <ul>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04">Instalar Nginx</a>
+            </li>
+            <li>
+                <a href="https://docs.nginx.com/nginx/admin-guide/web-server/web-server/">Nginx: Detallar archivo</a>
+            </li>
+        </ul>
+
+        Base de datos:
+        <ul>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04">Instalar MySql y crear usuario con permisos para BDD específica (ver últimos pasos)</a>
+            </li>
+        </ul>
+
+        Node:
+        <ul>
+            <li>
+                <a href="https://phoenixnap.com/kb/update-node-js-version ">Actualizar Node</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04">Node como app de producción</a>
+            </li>
+            <li>
+                <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-18-04">Node como app de producción</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        $(":checkbox").change(function() {
+            if(this.checked) {
+                $(this).closest('tr').addClass("selected");  
+            } else {
+                $(this).closest('tr').removeClass("selected");  
+            }
+        });
+
+    </script>
+
+    <style>
+
+        .how2div {
+            background: linear-gradient(335deg, rgba(240,247,255,1) 0%, rgb(192, 219, 255) 100%);
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type='checkbox'] {
+            width: 50px;
+            height: 50px;
+        }
+
+        .selected {
+            background-color: rgb(155, 211, 248);
+        }
+    </style>
 </body>
 </html>
