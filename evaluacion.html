@@ -9,322 +9,404 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+
+    <script src="cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 </head>
 <body class="p-4">
 
-    <center>
-        <p style="font-size: 80px">
-            🛫
-        </p>
-        <h1>Code brigade</h1>
-    </center>
+    <header>
+        <center>
+            <hr>
+                <p style="font-size: 80px">
+                    🛫
+                </p>
+                <h1>Code brigade</h1>
+        
+                <div class="navbar">
+                    <div>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="evaluacion.html">Evaluación 2019</a>
+                    </div>
+                    <div>
+                        <a href="recursos.html">Apuntes</a>
+                    </div>
+                    <div>
+                        <a href="ruta.html">Implementación</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://github.com/code-brigade-2022">➡️ Github</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://hackathoncopa.copaair.com/assets/3ra.%20Hackathon%202022%20%20Bases%20Legales.pdf">➡️ Reglas</a>
+                    </div>
+                </div>
+            <hr>
+        </center>
+    </header>
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="evaluacion.html">Evaluación 2019</a>
-        </li>
-        <li>
-            <a href="recursos.html">Recursos</a>
-        </li>
-        <li>
-            <a href="ruta.html">Ruta de implementación</a>
-        </li>
-        <li>
-            <a target="_blank" href="https://hackathoncopa.copaair.com/assets/3ra.%20Hackathon%202022%20%20Bases%20Legales.pdf">➡️ Reglas</a>
-        </li>
-    </ul>
-
     <center>
-        <h2>
+        <h3>
             Evaluación 2019
-        </h2>
+        </h3>
 
         <a target="_blank" href="https://onedrive.live.com/view.aspx?resid=ED1706B3A8F0C3D6!663156&ithint=file%2cxlsx&authkey=!AI9OR-l5QhTjBEc">🟩 Excel</a> |
-        <a target="_blank" href="https://github.com/vcach/hackaton-copa">🐙 Repositorio</a>
+        <a target="_blank" href="https://github.com/vcach/hackaton-copa">🐙 Repositorio</a> |
+        ✔️: Se estudió
     </center>
 
-    <table class="table table-bordered text-center mt-4 mb-4" style="border-radius: 5px">
+    <br>
+
+    <center>
+        <h4>Puntos base</h4>
+    </center>
+    <table class="table table-bordered text-center mt-4 mb-4" id="tabla-evaluacion" style="border-radius: 5px">
         <thead class="color1">
-            <tr>
-                <th colspan="6" >
-                    Puntos base
-                </th>
-            </tr>
             <tr >
                 <th></th>
                 <th>Ítem</th>
-                <th>Equivalente en Azure</th>
                 <th>Puntaje</th>
-                <th>Equipo que obtuvo los puntos (2019)</th>
+                <th>Cómo lograrlo</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
-                    <input type="checkbox" id="checkbox1" name="" value="" class="m-3" checked>
+                    <input type="checkbox" id="" name="" value="" class="m-3" checked>
                 </td>
                 <td>
-                    <a href="recursos.html#recursosB1">1. Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento</a>
+                    1. Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento
                 </td>
-                <td></td>
                 <td>150</td>
-                <td></td>
-            </tr>
-            <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <a href="recursos.html#apuntes1">
+                        VM + Servidor NGinx + Mysql o CosmosDB + Storage Account
+                    </a>
                 </td>
-                <td>2. Múltiples zona de disponibilidad para el servidor web</td>
-                <td></td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>Múltiples zona de disponibilidad para la aplicación web </td>
-                <td></td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>3. Múltiples zona de disponibilidad para los datos. Puede ser RDS o se puede crear otra instancia EC2.</td>
-                <td></td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>4. Subredes públicas y privadas</td>
-                <td>Virtual Network y Subnets</td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>5. Balanceo de carga</td>
-                <td></td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>6. Grupo de autoescalamiento</td>
-                <td>Virtual Machine Scale Sets</td>
-                <td>150</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>7. S3 - Respaldo u almacenamiento de objetos</td>
-                <td>Azure Storage Account</td>
-                <td>100</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>8. Grupos de seguridad</td>
-                <td>Azure Network Security Groups</td>
-                <td>50</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>9. Monitoreo de la aplicación a través de CloudWatch para tomar acciones</td>
-                <td>
-                    Application Insights
-                </td>
-                <td>50</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>10. IAM - Usuarios y roles definidos</td>
-                <td>
-                    Azure Role Based Access Control (RBAC)
-                </td>
-                <td>100</td>
-                <td></td>
             </tr>
             <tr>
                 <td>
                     <input type="checkbox" id="" name="" value="" checked>
                 </td>
                 <td>
-                    <a href="recursos.html#recursosB11">11. CDN</a>
+                    2. Múltiples zona de disponibilidad para el servidor web
                 </td>
+                <td>100</td>
                 <td>
-                    Azure CDN
+                    <a href="recursos.html#apuntes2">Configurar disponibilidad al crear recurso</a>
                 </td>
-                <td>50</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>12. NAT Gateway - Parchar y actualizar el sistema operativo</td>
-                <td>
-                    Azure Update Management
-                </td>
-                <td>50</td>
-                <td></td>
             </tr>
             <tr>
                 <td>
                     <input type="checkbox" id="" name="" value="" checked>
                 </td>
-                <td>13. Gestión remota - Host bastion</td>
                 <td>
-                    <a href="recursos.html#recursosB14">Azure Bastion</a>
+                    3. Múltiples zona de disponibilidad para la aplicación web
                 </td>
-                <td>50</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="" name="" value="">
-                </td>
-                <td>14. Gestión remota - Cloud9</td>
-                <td¿Visual Studio?</td>
                 <td>100</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes2">Configurar disponibilidad al crear recurso</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    4. Múltiples zona de disponibilidad para los datos. Puede ser RDS o se puede crear otra instancia EC2.
+                </td>
+                <td>100</td>
+                <td>
+                    <a href="recursos.html#apuntes2">Configurar disponibilidad al crear recurso</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    5. Subredes públicas y privadas
+                </td>
+                <td>100</td>
+                <td>
+                    <a href="recursos.html#apuntes3">VNets, Subredes</a>
+                </td>
             </tr>
             <tr>
                 <td>
                     <input type="checkbox" id="" name="" value="">
                 </td>
-                <td>15. Gestión remota - System Manager</td>
-                <td></td>
+                <td>
+                    6. Balanceo de carga
+                </td>
+                <td>100</td>
+                <td>
+                    <a href="recursos.html#apuntes1">¿Configurar load balance al crear VMSS?</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    7. Grupo de autoescalamiento
+                </td>
                 <td>150</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes1">Virtual Machine Scale Sets</a>
+                </td>
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <input type="checkbox" id="" name="" value="" checked>
                 </td>
-                <td>16. Cualquier característica adicional</td>
                 <td>
-                    Adicional
+                    8. S3 - Respaldo u almacenamiento de objetos
+                </td>
+                <td>100</td>
+                <td>
+                    <a href="recursos.html#apuntes1">Azure Storage Account</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    9. Grupos de seguridad
                 </td>
                 <td>50</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes3">Security Groups</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>
+                    10. Monitoreo de la aplicación a través de CloudWatch para tomar acciones
+                </td>
+                <td>50</td>
+                <td>
+                    <a href="recursos.html#apuntes4">Application Insights</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    11. IAM - Usuarios y roles definidos
+                </td>
+                <td>100</td>
+                <td>
+                    <a href="recursos.html#apuntes5">Azure Role Based Access Control (RBAC)</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    12. CDN
+                </td>
+                <td>50</td>
+                <td>
+                    <a href="recursos.html#apuntes6">Azure CDN</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>
+                    13. NAT Gateway - Parchar y actualizar el sistema operativo
+                </td>
+                <td>50</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="recursos.html#apuntes7">Azure Update Management</a>
+                        </li>
+                        <li>
+                            <a href="recursos.html#apuntes7">Cronjob</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    14. Gestión remota - Host bastion
+                </td>
+                <td>50</td>
+                <td>
+                    <a href="recursos.html#recursos8">Azure Bastion</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="">
+                </td>
+                <td>
+                    15. Gestión remota - Cloud9
+                </td>
+                <td>100</td>
+                <td>
+                    ¿Visual Studio?
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    16. Gestión remota - System Manager
+                </td>
+                <td>150</td>
+                <td>
+                    <a href="recursos.html#apuntes7">Azure Update Management</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="" name="" value="" checked>
+                </td>
+                <td>
+                    17. Cualquier característica adicional
+                </td>
+                <td>50</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="recursos.html#apuntes1">App funcionando</a>
+                        </li>
+                        <li>
+                            ¿Usar CosmosDB?
+                        </li>
+                    </ul>
+                </td>
             </tr>
         </tbody>
+    </table>
+
+    <center>
+        <h4>Puntos opcionales</h4>
+    </center>
+
+    <table class="table table-bordered text-center mt-4 mb-4" id="tabla-evaluacion" style="border-radius: 5px">
         <thead class="color1">
-            <tr>
-                <th colspan="6">
-                    Puntos opcionales
-                </th>
-            </tr>
             <tr >
                 <th></th>
                 <th>Ítem</th>
-                <th>Equivalente en Azure</th>
                 <th>Puntaje</th>
-                <th>Equipo que obtuvo los puntos (2019)</th>
+                <th>Cómo lograrlo</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <input type="checkbox" id="" name="" value="" checked>
                 </td>
-                <td>1. Automatizar cambios en el App</td>
                 <td>
-                    Azure DevOps
+                    1. Automatizar cambios en el App
                 </td>
                 <td>125</td>
-                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="recursos.html#apuntes9">Github Actions</a>
+                        </li>
+                        <li>
+                            <a href="recursos.html#apuntes9">Cronjob</a>
+                        </li>
+                    </ul>
+                </td>
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <input type="checkbox" id="" name="" value="" checked>
                 </td>
-                <td>2. Replicación multiregión</td>
                 <td>
-
+                    2. Replicación multiregión
                 </td>
                 <td>125</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes2">¿Disponibilidad?</a>
+                </td>
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <input type="checkbox" id="" name="" value="" checked>
                 </td>
-                <td>3. Automatizar el parchado, el almacenamiento, gestión de los recursos</td>
                 <td>
-                    Azure DevOps, Azure Update Management
+                    3. Automatizar el parchado, el almacenamiento, gestión de los recursos
                 </td>
                 <td>100</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes9">Github Actions</a>
+                </td>
             </tr>
             <tr>
                 <td>
-                    <input type="checkbox" id="" name="" value="">
+                    <input type="checkbox" id="" name="" value="" checked>
                 </td>
                 <td>
-                    <a href="recursos.html#recursosO5" id="listaO5">4. Infraestructura como Código</a>
-                </td>
-                <td>
-                    Terraform (Azure)
+                    4. Infraestructura como Código
                 </td>
                 <td>150</td>
-                <td></td>
+                <td>
+                    <a href="recursos.html#apuntes10">Terraform</a>
+                </td>
             </tr>
             <tr>
                 <td>
                     <input type="checkbox" id="" name="" value="">
                 </td>
                 <td>5. EC2 fleet, instancias tipo Spot</td>
+                <td>125</td>
                 <td>
                     Azure Managed Kubernetes Service
                 </td>
-                <td>125</td>
-                <td></td>
             </tr>
             <tr>
                 <td>
                     <input type="checkbox" id="" name="" value="" checked>
                 </td>
                 <td>
-                    <a href="recursos.html#recursosO7" id="listaO7">6. Controles de seguridad (CloudTrail, GuardDuty, WAF, Config, KMS)</a>
-                </td>
-                <td>
-                    <ul>
-                        <li>CloudTrail = Log Analytics (Azure Monitor)</li>
-                        <li>AWS GuardDuty = Azure Advanced Threat Protection (es con subscripción avanzada)</li> 
-                        <li>WAF = Azure Firewall</li>
-                        <li>KMS = Azure KeyVault</li>
-                    </ul>
+                    6. Controles de seguridad (CloudTrail, GuardDuty, WAF, Config, KMS)
                 </td>
                 <td>175</td>
-                <td></td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="recursos.html#apuntes4">CloudTrail = Log Analytics (Azure Monitor)</a>
+                        </li>
+                        <li>
+                            <a href="recursos.html#apuntes11">AWS GuardDuty = Azure Advanced Threat Protection (es con subscripción avanzada)</a>
+                        </li> 
+                        <li>
+                            <a href="recursos.html#apuntes3">WAF = Azure Firewall</a>
+                        </li>
+                        <li>
+                            <a href="recursos.html#apuntes11">KMS = Azure KeyVault</a>
+                        </li>
+                    </ul>
+                </td>
             </tr>
         </tbody>
     </table>
 
     <script src="script.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#tabla-evaluacion').DataTable();
+        } );
+    </script>
 </body>
 </html>

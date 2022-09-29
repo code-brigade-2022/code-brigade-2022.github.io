@@ -17,7 +17,7 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .color3 {
-    background: linear-gradient(335deg, rgb(240, 255, 249) 0%, rgb(184, 243, 222) 100%);
+    background: linear-gradient(335deg, rgb(246, 239, 251) 0%, rgb(241, 231, 247) 100%);
 }
 
 .color4 {
@@ -31,4 +31,20 @@ input[type='checkbox'] {
 
 .selected {
     background-color: rgb(201, 240, 218);
+}
+
+.navbar {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar > div {
+    padding: 10px;
+    
+}
+
+.navbar > div:hover {
+    background-color: rgb(215, 240, 255);
+    
 }

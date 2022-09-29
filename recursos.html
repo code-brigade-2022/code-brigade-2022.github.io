@@ -12,45 +12,54 @@
 </head>
 <body class="p-4">
 
-    <center>
-        <p style="font-size: 80px">
-            🛫
-        </p>
-        <h1>Code brigade</h1>
-    </center>
+    <header>
+        <center>
+            <hr>
+                <p style="font-size: 80px">
+                    🛫
+                </p>
+                <h1>Code brigade</h1>
+        
+                <div class="navbar">
+                    <div>
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="evaluacion.html">Evaluación 2019</a>
+                    </div>
+                    <div>
+                        <a href="recursos.html">Apuntes</a>
+                    </div>
+                    <div>
+                        <a href="ruta.html">Implementación</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://github.com/code-brigade-2022">➡️ Github</a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://hackathoncopa.copaair.com/assets/3ra.%20Hackathon%202022%20%20Bases%20Legales.pdf">➡️ Reglas</a>
+                    </div>
+                </div>
+            <hr>
+        </center>
+    </header>
 
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="evaluacion.html">Evaluación 2019</a>
-        </li>
-        <li>
-            <a href="recursos.html">Recursos</a>
-        </li>
-        <li>
-            <a href="ruta.html">Ruta de implementación</a>
-        </li>
-        <li>
-            <a target="_blank" href="https://hackathoncopa.copaair.com/assets/3ra.%20Hackathon%202022%20%20Bases%20Legales.pdf">➡️ Reglas</a>
-        </li>
-    </ul>
-
     <center>
-        <h2>
+        <h3>
             Apuntes
-        </h2>
+        </h3>
 
         📚: Documentación o guía oficial | 📙: Tutorial | 🛠️: Troubleshooting | 🐧: Comando
     </center>
 
     <!-- ------------------------------ PUNTOS BASE ------------------------------ -->
 
-    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntesB1">
+    <!-- 1 -->
+
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntes1">
         <center>
             <h5>
-                Construir la arquitectura desde cero * EC2: servidor web + base de datos + almacenamiento
+                Construir la arquitectura desde cero
             </h5>
         </center>
 
@@ -108,27 +117,103 @@
         </ul>
     </div>
 
-    <!-- Base 10 -->
+    <!-- 2 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntesB10">
-        <center>
-            <h5>
-                10. IAM - Usuarios y roles definidos
-            </h5>
-        </center>
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntes2">
+        <h5>
+            Disponibilidad
+        </h5>
+        Máquinas virtuales:
         <ul>
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=4v7ffXxOnwU&list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM&index=30">📙 - Azure Role Based Access Control</a>
+                Configurar
             </li>
+        </ul>
+
+        Storage Account:
+        <ul>
             <li>
-                <a target="_blank" href="https://www.youtube.com/watch?v=eDH20Ve0eI0&list=PLGjZwEtPN7j-Q59JYso3L4_yoCjj2syrM&index=30">📙 - Azure Resource Locks</a>
+                Configurar
+            </li>
+        </ul>
+
+        CosmosDB:
+        <ul>
+            <li>
+                Configurar
             </li>
         </ul>
     </div>
 
-    <!-- Base 11 -->
+    <!-- 3 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntesB11">
+    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntes3">
+        <h5>
+            Configuración de redes (VNets, subredes, grupos de seguridad)
+        </h5>
+        VNets y subredes:
+        <ul>
+            <li>
+                Configurar
+            </li>
+        </ul>
+
+        Grupos de seguridad:
+        <ul>
+            <li>
+                Configurar
+            </li>
+        </ul>
+
+        Firewall:
+        <ul>
+            <li>
+                Configurar
+            </li>
+        </ul>
+    </div>
+
+    <!-- 4 -->
+
+    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntes4">
+        <h5>
+            Monitoreo
+        </h5>
+        Config:
+        <ul>
+            <li>
+                Configurar
+            </li>
+        </ul>
+    </div>
+
+    <!-- 5 -->
+
+    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntes5">
+        <center>
+            <h5>
+                Usuarios y roles definidos
+            </h5>
+        </center>
+        <ul>
+            <li>
+                <a target="_blank" href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator">📚 - Invitar usuarios y crear grupo</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.com/watch?v=4v7ffXxOnwU">📙 - Asignar roles por recurso</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/63875668/azure-add-user-to-subscription">🛠️ - Posible troubleshoot 1</a>
+            </li>
+            <li>
+                <a href="https://stackoverflow.com/questions/47424884/how-to-use-rbac-in-azure-for-user-in-another-tenant">🛠️ - Posible troubleshoot 2</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 6 -->
+
+    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntes6">
         <center>
             <h5>
                 CDN
@@ -144,22 +229,22 @@
         </ul>
     </div>
 
-    <!-- Base 12 -->
+    <!-- 7 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntesB12">
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntes7">
         <center>
             <h5>
-                12. NAT Gateway - Parchar y actualizar el sistema operativo
+                Actualizar Sistema Operativo
             </h5>
         </center>
 
-        Con Azure y en Linux:
+        Azure / Linux:
         <ul>
             <li>
                 <a target="_blank" href="https://www.youtube.com/watch?v=OkNVCWXseRA">📙 - Updates y patches con Azure Update Management</a>
             </li>
             <li>
-                <a href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/">📙 - Crontab</a>
+                <a href="https://www.geeksforgeeks.org/crontab-in-linux-with-examples/">📙 - Cronjob</a>
             </li>
             <li>
                 🐧 - * * * * * sudo apt-get update && sudo systemctl restart nginx && pm2 restart
@@ -167,12 +252,12 @@
         </ul>
     </div>
 
-    <!-- Base 14 -->
+    <!-- 8 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color2" id="apuntesB14">
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntes8">
         <center>
             <h5>
-                13. Azure Bastion
+                Acceso remoto: Azure Bastion
             </h5>
         </center>
         <ul>
@@ -182,15 +267,12 @@
         </ul>
     </div>
 
-    <!-- ------------------------------ PUNTOS OPCIONALES ------------------------------ -->
+    <!-- 9 -->
 
-
-    <!-- Opcional 3 -->
-
-    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntesO3">
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntesO3">
         <center>
             <h5>
-                Automatizar el parchado, el almacenamiento, gestión de los recursos
+                CI/CD: Automatizar el parchado, el almacenamiento, gestión de los recursos
             </h5>
         </center>
         <h6>Github Actions:</h6>
@@ -204,9 +286,9 @@
         </ul>
     </div>
 
-    <!-- Opcional 5 -->
+    <!-- 10 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntesO5">
+    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntes10">
         <center>
             <h5>
                 Infraestructura como Código
@@ -220,18 +302,28 @@
             <li>
                 <a target="_blank" href="https://www.terraform.io/language/modules">📚 - Módulos</a>
             </li>
+            <li>
+                <a target="_blank" href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs">Providers / componentes</a>
+            </li>
         </ul>
     </div>
 
-    <!-- Opcional 7 -->
+    <!-- 11 -->
 
-    <div class="how2div mt-4 mb-4 p-3 color4" id="apuntesO7">
+    <div class="how2div mt-4 mb-4 p-3 color3" id="apuntes11">
         <center>
             <h5>
-                Controles de seguridad (CloudTrail, GuardDuty, WAF, Config, KMS)
+                Controles de seguridad (GuardDuty, WAF, Config, KMS)
             </h5>
         </center>
-        <h6>Azure KeyVault:</h6>
+        Notas:
+        <ul>
+            <li>
+                AWS GuardDuty = Azure Advanced Threat Protection es con subscripción avanzada...
+            </li>
+        </ul>
+
+        Azure KeyVault:
         <ul>
             <li>
                 <a href="https://www.youtube.com/watch?v=34IrPO1Xh2o">Log Analytics</a>
@@ -247,7 +339,9 @@
 
     <!-- ------------------------------ ADEMÁS ------------------------------ -->
 
-    <div class="how2div mt-4 mb-4 p-3 color1">
+    <hr>
+
+    <div class="how2div mt-4 mb-4 p-3 color1" id="apuntes12">
         <center>
             <h5>
                 Además...
