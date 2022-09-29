@@ -4,6 +4,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .how2div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
@@ -22,6 +25,10 @@ a:link, a:visited, a:hover, a:active {
 
 .color4 {
     background: linear-gradient(335deg, rgb(245, 240, 255) 0%, rgb(209, 184, 243) 100%);
+}
+
+.color-white {
+    background-color: white;
 }
 
 input[type='checkbox'] {
